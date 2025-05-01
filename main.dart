@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void main() {
   // 3rd Assignment (Loops)
 
@@ -15,4 +17,139 @@ void main() {
   //   }
   // }
   // print("This is the Even number: $evenNum");
+
+  // Q no 2: Write a program that prints the Fibonacci sequence up to a given
+  // number using a for loop.
+  // Example:
+  // Input: 10
+  // Output: 0 1 1 2 3 5 8
+
+  // int limit = 10;
+
+  //   int a = 0;
+  //   int b = 1;
+
+  //   print(a);
+  //   print(b);
+
+  //   for (int i = 2; i < limit; i++) {
+  //     int next = a + b;
+  //     if (next > limit) break;
+  //     print(next);
+  //     a = b;
+  //     b = next;
+  //   }
+
+  // Q no 3: Implement a code that checks whether a given number is prime or not.
+  // Example:
+  // Input: 17
+  // Output: 17 is a prime number
+
+  // int number = 4;
+  // bool isPrime = true;
+
+  // if (number <= 1) {
+  //   isPrime = false;
+  // } else {
+  //   for (int i = 2; i <= number ~/ 2; i++) {
+  //     if (number % i == 0) {
+  //       isPrime = false;
+  //       break;
+  //     }
+  //   }
+  // }
+
+  // if (isPrime) {
+  //   print('$number is a prime number');
+  // } else {
+  //   print('$number is not a prime number');
+  // }
+
+  //   Q no 4:Implement a code that finds the factorial of a number using a while
+  // loop or for loop.
+  // Example:
+  // Input: 5
+  // Output: Factorial of 5 is 120
+
+  // int number = 5;
+  // int factorialNum = 1;
+
+  // for (var i = 1; i <= number; i++) {
+  //   factorialNum = factorialNum * i;
+  // }
+
+  // print("'Factorial of $number is $factorialNum'");
+
+  // Q no 5:  Write a program that calculates the sum of all the digits in a given
+  // number using a while loop.
+
+  // int number = 12345;
+  // int sum = 0;
+
+  // while (number > 0) {
+  //   int digit = number % 10;
+  //   sum = sum + digit;
+  //   number = number ~/ 10;
+  // }
+
+  // print("The total Num is $sum");
+
+  // Q no 6: Implement a code that finds the largest element in a list using a for
+  // loop.
+  // Example:
+  // Input: [3, 9, 1, 6, 4, 2, 8, 5, 7]
+  // Output: Largest element: 9
+
+  // List<int> inputNum = [1];
+
+  // for (var i = 0; i < inputNum.length; i++) {
+
+  //   print("Enter Your Numbers to find largest And if you want to exit Press X");
+  //   String input = stdin.readLineSync()!;
+
+  //   if (input == "X") {
+  //     break;
+  //   }
+
+  //   int stringToInt = int.parse(input);
+
+  //   inputNum.add(stringToInt);
+  //   int checkNum = inputNum.reduce((a, b) => a > b ? a : b);
+
+  //   if (inputNum[i] < checkNum) {
+  //     print(
+  //       "this Number $checkNum is the biggest number of this List $inputNum",
+  //     );
+  //   } else {
+  //     print(
+  //       "this Number ${inputNum[i]} is the biggest number of this List $inputNum",
+  //     );
+  //   }
+
+  // }
+
+  // Q no 7: Write a program that prints the multiplication table of a given number
+  // using a for loop.
+
+  // int tableNum = 7;
+
+  // for (var i = 1; i <= 10; i++) {
+  //   print("$tableNum X $i = ${tableNum * i}");
+  // }
+
+  // Q no 8: Implement a function that checks if a given string is a palindrome.
+  // Example:
+  // Input: "radar"
+  // Output: "radar" is a palindrome.
+
+  // String simpleWord = "tibit";
+
+  // String reversedWord = simpleWord.split("").reversed.join();
+
+
+  // if (reversedWord == simpleWord) {
+  //   print("$simpleWord is a palindrome");
+  // } else {
+  //   print("$simpleWord is not palindrome");
+  // }
 }
