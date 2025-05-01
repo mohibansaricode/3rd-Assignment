@@ -139,17 +139,133 @@ void main() {
 
   // Q no 8: Implement a function that checks if a given string is a palindrome.
   // Example:
-  // Input: "radar"
+  // // Input: "radar"
   // Output: "radar" is a palindrome.
 
   // String simpleWord = "tibit";
 
   // String reversedWord = simpleWord.split("").reversed.join();
 
-
   // if (reversedWord == simpleWord) {
   //   print("$simpleWord is a palindrome");
   // } else {
   //   print("$simpleWord is not palindrome");
   // }
+
+  //   Q no 9: Write a program to display a pattern like a right angle triangle using an
+  // asterisk using loop.
+
+  // for (var i = 1; i <= 5; i++) {
+  //   for (var j = 0; j < i; j++) {
+  //     stdout.write("*");
+  //   }
+  //   print("");
+  // }
+
+  // Q no 10 : Write a program to display a pattern like a right angle triangle with a
+  // // number using loop.
+  // The pattern like :
+  // 1
+  // 12
+  // 123
+  // 1234
+
+  //  for (var i = 1; i <= 5; i++) {
+  //     for (var j = 1; j <= i; j++) {
+  //       stdout.write("$j");
+  //     }
+  //     print("");
+  //   }
+
+  // Q no 11: Write a program to make such a pattern like a right angle triangle with
+  // a number which will repeat a number in a row.
+  // The pattern like :
+  //  1
+  //  22
+  //  333
+  //  4444
+
+  //  for (var i = 1; i <= 5; i++) {
+  //     for (var j = 1; j <= i; j++) {
+  //       stdout.write("$i");
+  //     }
+  //     print("");
+  //   }
+
+  // Q no 12: Write a program to make such a pattern like a right angle triangle with
+  // the number increased by 1 using loop..
+  // The pattern like :
+  //  1
+  //  2 3
+  //  4 5 6
+  //  7 8 9 10
+
+  // int currentRow = 1;
+  // int printedInRow = 0;
+
+  // for (int num = 1; num <= 10; num++) {
+  //   stdout.write("$num ");
+  //   printedInRow++;
+
+  //   if (printedInRow == currentRow) {
+  //     print(""); // Move to next line
+  //     currentRow++;
+  //     printedInRow = 0;
+  //   }
+  // }
+
+  //   Q no 13: Write a program to make a pyramid pattern with numbers increased by
+  //   1
+  //  2 3
+  //  4 5 6
+  // 7 8 9 10
+
+// int rows = 4;
+//   int currentRow = 1;
+//   int printedInRow = 0;
+//   int num = 1;
+
+//   for (; num <= (rows * (rows + 1)) ~/ 2; num++) {
+//     // Print spaces only at the start of each row
+//     if (printedInRow == 0) {
+//       stdout.write(' ' * (rows - currentRow));
+//     }
+
+//     stdout.write('$num ');
+//     printedInRow++;
+
+//     if (printedInRow == currentRow) {
+//       print(""); // Move to next line
+//       currentRow++;
+//       printedInRow = 0;
+//     }
+//   }
+
+// Q no 14: Write a program to make such a pattern as a pyramid with an asterisk.
+//  *
+//  * *
+//  * * *
+// * * * *
+
+//  int rows = 4;
+//   int currentRow = 1;
+//   int printedInRow = 0;
+//   int num = 1;
+
+//   for (; num <= (rows * (rows + 1)) ~/ 2; num++) {
+//     // Print spaces only at the start of each row
+//     if (printedInRow == 0) {
+//       stdout.write(' ' * (rows - currentRow));
+//     }
+
+//     stdout.write('* ');
+//     printedInRow++;
+
+//     if (printedInRow == currentRow) {
+//       print(""); // Move to next line
+//       currentRow++;
+//       printedInRow = 0;
+//     }
+//   }
+
 }
