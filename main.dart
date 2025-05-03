@@ -177,7 +177,7 @@ void main() {
   //     print("");
   //   }
 
-    // Q no 11: Write a program to make such a pattern like a right angle triangle with
+  // Q no 11: Write a program to make such a pattern like a right angle triangle with
   // a number which will repeat a number in a row.
   // The pattern like :
   //  1
@@ -314,7 +314,6 @@ void main() {
   //   print("Enter your password");
   //   String inputPassword = stdin.readLineSync()!;
 
-
   //   for (var i = 0; i < userCredentials.length; i++) {
   //     if (userCredentials[i]["email"] == inputEmail &&
   //         userCredentials[i]["password"] == inputPassword) {
@@ -328,7 +327,192 @@ void main() {
   //   }
   // }
 
+  // Q no 17:  Write a program that takes a list of numbers as input and prints the
+  // numbers greater than 5 using a for loop and if-else condition.
+
+  // List<int> numbers = [];
+
+  // print("Enter your Number");
+  // String inputPassword = stdin.readLineSync()!;
+  // int convertNum = int.parse(inputPassword);
+
+  // numbers.add(convertNum);
+
+  // for (var i = 0; i < numbers.length; i++) {
+  //   if (numbers[i] > 5) {
+  //     print(numbers);
+  //   } else {
+  //     numbers.remove(numbers[i]);
+  //   }
+  // }
+
+  // Q no 18: Write a program that counts the number of vowels in a given string
+  // using a for loop and if-else condition.
+
+  // print("Enter your Word");
+  // String vowelLetter = stdin.readLineSync()!;
+
+  // String check = vowelLetter.split("").toList().join().toLowerCase();
+
+  // int vowelA = 0;
+  // int vowelE = 0;
+  // int vowelI = 0;
+  // int vowelO = 0;
+  // int vowelU = 0;
+
+  // int totalVowelFound = 0;
+
+  // for (var i = 0; i < check.length; i++) {
+  //   if (check[i] == "a") {
+  //     vowelA++;
+  //   }
+  //   if (check[i] == "e") {
+  //     vowelE++;
+  //   }
+  //   if (check[i] == "i") {
+  //     vowelI++;
+  //   }
+  //   if (check[i] == "o") {
+  //     vowelO++;
+  //   }
+  //   if (check[i] == "u") {
+  //     vowelU++;
+  //   }
+
+  //   totalVowelFound = vowelA + vowelE + vowelI + vowelO + vowelU;
+  // }
+
+  // print(
+  //   """
+  //     In this Word $check You Have
+
+  //      Total A : $vowelA
+  //      Total E : $vowelE
+  //      Total I : $vowelI
+  //      Total O : $vowelO
+  //      Total U : $vowelU
+
+  //     And total Vowel letter Found is $totalVowelFound
+  //   """
+  //   );
+
+  // Q no 19: Write a program that takes a list of student details as input, where
+  // each student is represented by a map containing their name, marks,
+  // section, and roll number. The program should determine the grade of
+  // each student based on their average score (assuming maximum marks
+  // for each subject is 100) and print the student's name along with their
+  // grade.
+
+  // List<Map<String, dynamic>> studentDetails = [];
+
+  // print("Enter Your Name");
+  // String studentName = stdin.readLineSync()!.toUpperCase();
+
+  // print("Enter Your Roll Number");
+  // String? studentId = stdin.readLineSync();
+
+  // print("Enter Your class");
+  // String? studentClass = stdin.readLineSync();
+
+  // print("Enter Your Math Numbers");
+  // String? inputMath = stdin.readLineSync();
+  // int mathNumber = int.parse(inputMath!);
+
+  // print("Enter Your English Numbers");
+  // String? inputEnglish = stdin.readLineSync();
+  // int englishNumber = int.parse(inputEnglish!);
+
+  // print("Enter Your Urdu Numbers");
+  // String? inputUrdu = stdin.readLineSync();
+  // int urduNumber = int.parse(inputUrdu!);
+
+  // print("Enter Your Science Numbers");
+  // String? inputScience = stdin.readLineSync();
+  // int scienceNumber = int.parse(inputScience!);
+
+  // print("Enter Your Computer Numbers");
+  // String? inputcomp = stdin.readLineSync();
+  // int compNumber = int.parse(inputcomp!);
+ 
+
+  // int totalNumber =
+  //     mathNumber + englishNumber + urduNumber + scienceNumber + compNumber;
+  // num percentage = (totalNumber / 500) * 100;
+  // String? grade;
+
+  // if (percentage < 50) {
+  //   grade = "Fail";
+  // } else if (percentage >= 50 && percentage < 60) {
+  //   grade = "D";
+  // } else if (percentage >= 60 && percentage < 70) {
+  //   grade = "C";
+  // } else if (percentage >= 70 && percentage < 80) {
+  //   grade = "B";
+  // } else if (percentage >= 80 && percentage < 90) {
+  //   grade = "A";
+  // } else if (percentage >= 90 && percentage < 101) {
+  //   grade = "A+";
+  // } else {
+  //   print("Something Went Wrong");
+  //   exit(1);
+  // }
+
+  //   studentDetails.add(
+  //   {
+  //     "Name": studentName,
+  //     "RollNumber": studentId,
+  //     "Section": studentClass,
+  //     "mathMarks": mathNumber,
+  //     "urduMarks": urduNumber,
+  //     "englishMarks": englishNumber,
+  //     "scienceMarks": scienceNumber,
+  //     "compMarks": compNumber,
+  //     "studentPercentage": percentage,
+  //     "studentGrade": grade,
+  //        },
+  //   );
+
+  //   print(studentDetails[0]);
 
 
+  // print("\n========== STUDENT REPORT ==========");
+  // print("Name        : $studentName");
+  // print("Roll No     : $studentId");
+  // print("Class       : $studentClass");
+  // print("Total Marks : 500");
+  // print("Obtained    : $totalNumber");
+  // print("Percentage  : ${percentage.toStringAsFixed(2)}%");
+  // print("Grade       : ${grade ?? "N/A"}");
+  // print("====================================");
+
+// Q no 20:Write a program that takes a list of integers as input and returns a new
+// list containing only the prime numbers from the original list. Implement
+// the solution using a for loop and logical operations.
+
+
+  // List<int> numbers = [2, 4, 5, 6, 7, 9, 11, 15, 17, 20];
+  // List<int> primeNumbers = [];
+
+  // for (int i = 0; i < numbers.length; i++) {
+  //   int number = numbers[i];
+  //   bool isPrime = true;
+
+  //   if (number < 2) {
+  //     isPrime = false;
+  //   } else {
+  //     for (int j = 2; j <= number ~/ 2; j++) {
+  //       if (number % j == 0) {
+  //         isPrime = false;
+  //         break;
+  //       }
+  //     }
+  //   }
+
+  //   if (isPrime) {
+  //     primeNumbers.add(number);
+  //   }
+  // }
+
+  // print("Prime Numbers: $primeNumbers");
 
 }
